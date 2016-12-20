@@ -1,0 +1,16 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "41ec380be9f958ba6cd02d4e220661f0"
+build_time: [535202597, 732646000]
+inputs:
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/ItemCell.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/ItemCD.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/Image+CoreDataProperties.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/ItemTypeCD.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/MaterialView.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/StoreCD.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/ItemType+CoreDataProperties.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/ImageCD.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/MainVC.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/Store+CoreDataProperties.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/AppDelegate.swift": [9223372036854775807, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/DreamLister/DreamLister/Item+CoreDataProperties.swift": [9223372036854775807, 0]

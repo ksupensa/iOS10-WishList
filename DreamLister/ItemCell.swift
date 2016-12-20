@@ -15,5 +15,10 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var Price: UILabel!
     @IBOutlet weak var Details: UILabel!
     
-    
+    func configureCell(item: Item){
+        Title.text = item.title
+        Price.text = "$\(item.price)"
+        Details.text = item.details
+        Thumb.image = item.toImage?.image as? UIImage
+    }
 }

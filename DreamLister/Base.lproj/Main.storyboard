@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="foT-Mp-icm">
-    <device id="retina3_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="foT-Mp-icm">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--DreamLister-->
+        <!--WishList-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="DreamLister" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1IA-0t-2cT">
-                                <rect key="frame" x="20" y="84" width="280" height="31"/>
+                                <rect key="frame" x="20" y="40" width="280" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="a4l-PH-l3O"/>
                                 </constraints>
@@ -33,23 +29,26 @@
                                     <segment title="Title"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sme-4b-iB9"/>
+                                </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oF6-xK-Krq">
-                                <rect key="frame" x="16" y="134" width="288" height="346"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oF6-xK-Krq">
+                                <rect key="frame" x="16" y="90" width="288" height="390"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="TTo-MC-isZ" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="TTo-MC-isZ" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="288" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TTo-MC-isZ" id="GeS-q2-Edq">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4I9-ks-2dq">
-                                                    <rect key="frame" x="8" y="8" width="272" height="133"/>
+                                                    <rect key="frame" x="8" y="8" width="272" height="134"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesla" translatesAutoresizingMaskIntoConstraints="NO" id="DCQ-gz-2Aj">
-                                                            <rect key="frame" x="8" y="16" width="100" height="100"/>
+                                                            <rect key="frame" x="8" y="17" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="kDG-Cq-oiJ"/>
                                                                 <constraint firstAttribute="width" constant="100" id="w1E-Pj-pg4"/>
@@ -74,7 +73,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someday I might buy one and become rich. Then i will give it." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wj-Pz-0lK">
-                                                            <rect key="frame" x="116" y="64" width="148" height="61"/>
+                                                            <rect key="frame" x="116" y="64" width="148" height="62"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -100,6 +99,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="4I9-ks-2dq" secondAttribute="trailing" id="L4R-DT-hyP"/>
                                                 <constraint firstItem="4I9-ks-2dq" firstAttribute="leading" secondItem="GeS-q2-Edq" secondAttribute="leadingMargin" id="hFs-sg-Myr"/>
@@ -107,7 +107,6 @@
                                                 <constraint firstItem="4I9-ks-2dq" firstAttribute="bottom" secondItem="GeS-q2-Edq" secondAttribute="bottomMargin" id="zO2-dG-ocF"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="Details" destination="7Wj-Pz-0lK" id="4Ti-LA-LGe"/>
                                             <outlet property="Price" destination="z4N-jF-Tll" id="ZmW-Ng-4nR"/>
@@ -129,19 +128,149 @@
                             <constraint firstItem="oF6-xK-Krq" firstAttribute="top" secondItem="1IA-0t-2cT" secondAttribute="bottom" constant="20" id="tSB-yU-MIU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="DreamLister" id="Ala-sq-mvM">
+                    <navigationItem key="navigationItem" title="WishList" id="Ala-sq-mvM">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZBJ-Cc-eQG">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="eaO-yD-DCk" kind="show" identifier="ItemDetailsVCNew" id="GZh-pb-pTd"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="1IA-0t-2cT" id="I9C-54-dr8"/>
                         <outlet property="tableView" destination="oF6-xK-Krq" id="Wyr-Hi-Ccd"/>
+                        <segue destination="eaO-yD-DCk" kind="show" identifier="ItemDetailsVC" id="1NM-xZ-DO8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704" y="140"/>
+            <point key="canvasLocation" x="1093" y="140"/>
+        </scene>
+        <!--Add / Edit-->
+        <scene sceneID="Via-2e-WTj">
+            <objects>
+                <viewController id="eaO-yD-DCk" customClass="ItemDetailsVC" customModule="DreamLister" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="afp-Yc-wnV"/>
+                        <viewControllerLayoutGuide type="bottom" id="oYr-GE-4Qv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VmQ-ZQ-oa2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="jf3-MO-LbC">
+                                <rect key="frame" x="16" y="28" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bwR-3I-eQJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="xbu-gr-o2F"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="550-eN-wAT">
+                                <rect key="frame" x="16" y="28" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HaQ-3d-Tue"/>
+                                    <constraint firstAttribute="height" constant="100" id="NCW-PK-dVb"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="eaO-yD-DCk" eventType="touchUpInside" id="5Tw-Ae-pVS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-r0-xTB" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
+                                <rect key="frame" x="124" y="28" width="180" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fGe-ra-hFP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-Kw-8h7" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
+                                <rect key="frame" x="124" y="88" width="180" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="66Q-UE-Swu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Feu-Ft-JhN" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
+                                <rect key="frame" x="16" y="148" width="288" height="60"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cFp-du-TKg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="blW-mW-zRW">
+                                <rect key="frame" x="16" y="228" width="288" height="232"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-Ui-lc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-1K-ocN">
+                                        <rect key="frame" x="0.0" y="20" width="288" height="181.5"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7n-Um-vI2">
+                                        <rect key="frame" x="0.0" y="201" width="288" height="30.5"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Save Item">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="savePressed:" destination="eaO-yD-DCk" eventType="touchUpInside" id="pXv-be-3Og"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fmD-Kw-8h7" firstAttribute="bottom" secondItem="550-eN-wAT" secondAttribute="bottom" id="7v0-Zg-gbU"/>
+                            <constraint firstItem="oYr-GE-4Qv" firstAttribute="top" secondItem="blW-mW-zRW" secondAttribute="bottom" constant="20" id="G7Y-cd-bRq"/>
+                            <constraint firstItem="550-eN-wAT" firstAttribute="centerY" secondItem="jf3-MO-LbC" secondAttribute="centerY" id="HE2-Ph-A4U"/>
+                            <constraint firstItem="blW-mW-zRW" firstAttribute="leading" secondItem="VmQ-ZQ-oa2" secondAttribute="leadingMargin" id="KCi-18-Q4E"/>
+                            <constraint firstItem="Feu-Ft-JhN" firstAttribute="leading" secondItem="VmQ-ZQ-oa2" secondAttribute="leadingMargin" id="Kkt-1O-bgN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Feu-Ft-JhN" secondAttribute="trailing" id="SKg-vq-ada"/>
+                            <constraint firstItem="jf3-MO-LbC" firstAttribute="leading" secondItem="VmQ-ZQ-oa2" secondAttribute="leadingMargin" id="TbQ-65-Dsn"/>
+                            <constraint firstItem="jf3-MO-LbC" firstAttribute="top" secondItem="afp-Yc-wnV" secondAttribute="bottom" constant="8" id="WST-5A-R79"/>
+                            <constraint firstItem="550-eN-wAT" firstAttribute="centerX" secondItem="jf3-MO-LbC" secondAttribute="centerX" id="aIN-g2-eG0"/>
+                            <constraint firstItem="fmD-Kw-8h7" firstAttribute="leading" secondItem="550-eN-wAT" secondAttribute="trailing" constant="8" id="aks-2R-dXu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="blW-mW-zRW" secondAttribute="trailing" id="axS-Pi-Du5"/>
+                            <constraint firstItem="0aQ-r0-xTB" firstAttribute="top" secondItem="afp-Yc-wnV" secondAttribute="bottom" constant="8" id="bN4-Tc-el5"/>
+                            <constraint firstItem="0aQ-r0-xTB" firstAttribute="leading" secondItem="550-eN-wAT" secondAttribute="trailing" constant="8" id="cxl-AR-2Fn"/>
+                            <constraint firstItem="blW-mW-zRW" firstAttribute="top" secondItem="Feu-Ft-JhN" secondAttribute="bottom" constant="20" id="gfJ-CL-45l"/>
+                            <constraint firstItem="0aQ-r0-xTB" firstAttribute="trailing" secondItem="VmQ-ZQ-oa2" secondAttribute="trailingMargin" id="gqJ-KS-Hmr"/>
+                            <constraint firstItem="fmD-Kw-8h7" firstAttribute="trailing" secondItem="VmQ-ZQ-oa2" secondAttribute="trailingMargin" id="iNs-a7-nN5"/>
+                            <constraint firstItem="Feu-Ft-JhN" firstAttribute="top" secondItem="550-eN-wAT" secondAttribute="bottom" constant="20" id="k9Z-b7-Fjc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add / Edit" id="GGj-B1-8LG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="V5O-Oc-Cey">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="eaO-yD-DCk" id="o44-Sd-9zJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="Feu-Ft-JhN" id="O5D-2h-kHb"/>
+                        <outlet property="priceField" destination="fmD-Kw-8h7" id="jpC-u9-WUB"/>
+                        <outlet property="storePicker" destination="7iZ-1K-ocN" id="uiV-wN-xZI"/>
+                        <outlet property="thumbImage" destination="jf3-MO-LbC" id="GX2-Vu-CNE"/>
+                        <outlet property="titleField" destination="0aQ-r0-xTB" id="XVd-LJ-GUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kN-TE-T1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xFi-oN-Uk6">
@@ -151,6 +280,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hlq-56-ZrG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,6 +297,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imagePick" width="300" height="300"/>
         <image name="tesla" width="800" height="489"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GZh-pb-pTd"/>
+    </inferredMetricsTieBreakers>
 </document>

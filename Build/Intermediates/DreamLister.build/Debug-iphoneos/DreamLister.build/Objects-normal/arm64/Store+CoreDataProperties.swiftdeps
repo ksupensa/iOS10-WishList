@@ -1,0 +1,216 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C11DreamLister5Store", ""]
+- ["C11DreamLister5Store", "fetchRequest"]
+- ["C11DreamLister5Store", "name"]
+- ["C11DreamLister5Store", "toImage"]
+- ["C11DreamLister5Store", "toItem"]
+- ["C11DreamLister5Store", "addToToItem"]
+- ["C11DreamLister5Store", "removeFromToItem"]
+- ["C11DreamLister5Store", "addToToItem"]
+- ["C11DreamLister5Store", "removeFromToItem"]
+provides-dynamic-lookup:
+- "toItem"
+- "addToToItem"
+- "addToToItem"
+- "name"
+- "removeFromToItem"
+- "removeFromToItem"
+- "toImage"
+depends-top-level:
+- "NSFetchRequest"
+- "Item"
+- !private "StringLiteralType"
+- "NSSet"
+- "String"
+- "Store"
+- "Image"
+depends-member:
+- !private ["Ps9AnyObject", "NSFetchRequest"]
+- ["Ps9AnyObject", "addToToItem"]
+- ["Ps9AnyObject", "fetchRequest"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "removeFromToItem"]
+- ["Ps9AnyObject", "toImage"]
+- ["Ps9AnyObject", "toItem"]
+- !private ["Ps7CVarArg", "NSFetchRequest"]
+- ["Ps7CVarArg", "addToToItem"]
+- ["Ps7CVarArg", "fetchRequest"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "name"]
+- ["Ps7CVarArg", "removeFromToItem"]
+- ["Ps7CVarArg", "toImage"]
+- ["Ps7CVarArg", "toItem"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
+- ["Ps28CustomDebugStringConvertible", "addToToItem"]
+- ["Ps28CustomDebugStringConvertible", "fetchRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "removeFromToItem"]
+- ["Ps28CustomDebugStringConvertible", "toImage"]
+- ["Ps28CustomDebugStringConvertible", "toItem"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
+- ["Ps23CustomStringConvertible", "addToToItem"]
+- ["Ps23CustomStringConvertible", "fetchRequest"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "removeFromToItem"]
+- ["Ps23CustomStringConvertible", "toImage"]
+- ["Ps23CustomStringConvertible", "toItem"]
+- !private ["Ps9Equatable", "NSFetchRequest"]
+- ["Ps9Equatable", "addToToItem"]
+- ["Ps9Equatable", "fetchRequest"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "removeFromToItem"]
+- ["Ps9Equatable", "toImage"]
+- ["Ps9Equatable", "toItem"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NSFetchRequest"]
+- ["Ps8Hashable", "addToToItem"]
+- ["Ps8Hashable", "fetchRequest"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "removeFromToItem"]
+- ["Ps8Hashable", "toImage"]
+- ["Ps8Hashable", "toItem"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- ["CSo14NSFetchRequest", "deinit"]
+- !private ["CSo14NSFetchRequest", "init"]
+- !private ["PSo20NSFetchRequestResult", "NSFetchRequest"]
+- ["PSo20NSFetchRequestResult", "addToToItem"]
+- ["PSo20NSFetchRequestResult", "fetchRequest"]
+- ["PSo20NSFetchRequestResult", "name"]
+- ["PSo20NSFetchRequestResult", "removeFromToItem"]
+- ["PSo20NSFetchRequestResult", "toImage"]
+- ["PSo20NSFetchRequestResult", "toItem"]
+- ["CSo15NSManagedObject", "Image"]
+- ["CSo15NSManagedObject", "Item"]
+- ["CSo15NSManagedObject", "NSFetchRequest"]
+- ["CSo15NSManagedObject", "NSSet"]
+- ["CSo15NSManagedObject", "Store"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "addToToItem"]
+- ["CSo15NSManagedObject", "fetchRequest"]
+- ["CSo15NSManagedObject", "name"]
+- ["CSo15NSManagedObject", "removeFromToItem"]
+- ["CSo15NSManagedObject", "toImage"]
+- ["CSo15NSManagedObject", "toItem"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Image"]
+- ["CSo8NSObject", "Item"]
+- ["CSo8NSObject", "NSFetchRequest"]
+- ["CSo8NSObject", "NSSet"]
+- ["CSo8NSObject", "Store"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "addToToItem"]
+- ["CSo8NSObject", "fetchRequest"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "removeFromToItem"]
+- ["CSo8NSObject", "toImage"]
+- ["CSo8NSObject", "toItem"]
+- !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
+- ["PSo16NSObjectProtocol", "addToToItem"]
+- ["PSo16NSObjectProtocol", "fetchRequest"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "removeFromToItem"]
+- ["PSo16NSObjectProtocol", "toImage"]
+- ["PSo16NSObjectProtocol", "toItem"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["C11DreamLister5Store", "Image"]
+- ["C11DreamLister5Store", "Item"]
+- ["C11DreamLister5Store", "NSFetchRequest"]
+- ["C11DreamLister5Store", "NSSet"]
+- ["C11DreamLister5Store", "Store"]
+- ["C11DreamLister5Store", "String"]
+- ["C11DreamLister5Store", "addToToItem"]
+- ["C11DreamLister5Store", "deinit"]
+- ["C11DreamLister5Store", "fetchRequest"]
+- ["C11DreamLister5Store", "name"]
+- ["C11DreamLister5Store", "removeFromToItem"]
+- ["C11DreamLister5Store", "toImage"]
+- ["C11DreamLister5Store", "toItem"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "NSFetchRequest"]
+- ["Ps9_Hashable", "addToToItem"]
+- ["Ps9_Hashable", "fetchRequest"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "name"]
+- ["Ps9_Hashable", "removeFromToItem"]
+- ["Ps9_Hashable", "toImage"]
+- ["Ps9_Hashable", "toItem"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo14NSFetchRequest"
+- "PSo20NSFetchRequestResult"
+- "CSo15NSManagedObject"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "C11DreamLister5Store"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "f6e57560033318fd8d3ad987bbd9628e"
