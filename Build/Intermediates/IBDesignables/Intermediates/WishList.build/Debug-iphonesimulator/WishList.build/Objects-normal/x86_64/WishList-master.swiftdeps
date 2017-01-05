@@ -1,0 +1,19 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "3cdccbed91d61cb978970469d6cd331a"
+build_time: [535644054, 119394000]
+inputs:
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/ItemCell.swift": [535519787, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/ItemCD.swift": [535183157, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/Image+CoreDataProperties.swift": [535182824, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/ItemTypeCD.swift": [535182824, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/MaterialView.swift": [535620828, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/StoreCD.swift": [535182824, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/ItemType+CoreDataProperties.swift": [535183361, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/ImageCD.swift": [535182824, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/ItemDetailsVC.swift": [535643941, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/MainVC.swift": [535643478, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/Store+CoreDataProperties.swift": [535182824, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/AppDelegate.swift": [535262288, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/Item+CoreDataProperties.swift": [535182824, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/StoreVC.swift": [535644052, 0]
+  "/Users/stitch/Documents/Informatique/iOS/iOS10/5-Core Data & Persistence/WishList/DreamLister/CustomTextField.swift": [524085938, 0]

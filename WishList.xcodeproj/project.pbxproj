@@ -25,6 +25,7 @@
 		F78E7AC31E02EBBD004CC406 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F78E7AC11E02EBBD004CC406 /* DreamLister.xcdatamodeld */; };
 		F78E7AC51E02EBBD004CC406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78E7AC41E02EBBD004CC406 /* Assets.xcassets */; };
 		F78E7AC81E02EBBD004CC406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78E7AC61E02EBBD004CC406 /* LaunchScreen.storyboard */; };
+		F7AA15071E0A592100B2592F /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA15061E0A592100B2592F /* StoreVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F78E7AC41E02EBBD004CC406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F78E7AC71E02EBBD004CC406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F78E7AC91E02EBBD004CC406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7AA15061E0A592100B2592F /* StoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				F78E7ABC1E02EBBD004CC406 /* MainVC.swift */,
 				F72E585F1E04FE7D00B48D5D /* ItemDetailsVC.swift */,
+				F7AA15061E0A592100B2592F /* StoreVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				F78E7ABB1E02EBBD004CC406 /* AppDelegate.swift in Sources */,
 				F753AF7B1E03B8E800E33C21 /* Item+CoreDataProperties.swift in Sources */,
 				F78E7AC31E02EBBD004CC406 /* DreamLister.xcdatamodeld in Sources */,
+				F7AA15071E0A592100B2592F /* StoreVC.swift in Sources */,
 				F72E58621E050CB000B48D5D /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

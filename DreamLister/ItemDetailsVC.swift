@@ -14,11 +14,10 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var storePicker: UIPickerView!
     @IBOutlet weak var titleField: CustomTextField!
     @IBOutlet weak var priceField: CustomTextField!
-    
     @IBOutlet weak var detailsField: CustomTextField!
-    
     @IBOutlet weak var thumbImage: UIImageView!
-    
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var deleteButton: UIBarButtonItem!
     
     var stores = [Store]()
     var itemToEdit: Item?
@@ -58,11 +57,6 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let store = stores[row].name
@@ -79,14 +73,23 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     func getStores(){
         let fetchRequest: NSFetchRequest<Store> = Store.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true, selector: #selector(NSString.caseInsensitiveCompare(_:)))
         fetchRequest.sortDescriptors = [sortDescriptor]
         
-        do{
+        do {
             self.stores = try ad.persistentContainer.viewContext.fetch(fetchRequest)
             self.storePicker.reloadAllComponents()
         } catch {
-            // handle error 
+            let error = error as NSError
+            print("\(error)")
+        }
+        
+        if stores.count == 0 {
+            stackView.isHidden = true
+            deleteButton.isEnabled = false
+        } else {
+            stackView.isHidden = false
+            deleteButton.isEnabled = true
         }
     }
     
