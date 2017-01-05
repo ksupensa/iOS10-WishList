@@ -1,5 +1,5 @@
 # iOS10-WishList
-Application to save on your phone what you would wish to own.
+Application to save on your phone what you wish you owned.
 
 Used concepts:
 CoreData
