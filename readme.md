@@ -13,4 +13,4 @@ Application to save on your phone what you wish you owned.
 * Segue
 * UISegment
 
-## All the content(code, resources, etc...) are for educational purpose only under 'fair use'.
+### All the content(code, resources, etc...) are for educational purpose only under 'fair use'.
